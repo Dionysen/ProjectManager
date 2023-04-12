@@ -11,11 +11,13 @@ A project manager for c++, create project and class easily.
 
 ### Installation
 
+Mannully: 
+
 ```bash
 #!/bin/bash
 cd
 rm -rf ./projectmanager
-git clone git@gitee.com:sential/projectmanager.git
+git clone https://github.com/Dionysen/ProjectManager.git
 cd projectmanager/build
 rm -rf ./*
 cmake ..
@@ -23,9 +25,22 @@ make
 sudo cp ./pm /usr/bin/pm
 ```
 
+or Use install script:
+
+```shell
+git clone https://github.com/Dionysen/ProjectManager.git
+cd ProjectManager/tools
+chmod +x ./install.sh
+./install.sh
+```
+
+Tips: You even can download the "install.sh" and just run it.  
+
 ### Usage
 
 Use `pm --[args]` or `pm -[args]`:
+
+`[args]` should be a path or a project.
 
 | long arg          | arg    | do                         |
 | ----------------- | ------ | -------------------------- |
@@ -33,9 +48,10 @@ Use `pm --[args]` or `pm -[args]`:
 | `--createproject` | `-c`   | create project             |
 | `--delproject`    | `-d`   | delete a prject            |
 | `--addclass`      | `-a`   | add class                  |
-| `--delclass`      | `none` | delete a class             |
+| `--delclass`      | `-D` | delete a class             |
 | `--build`         | `-b`   | build without run          |
+|`--make`|`-m`| build the project with makefile|
 | `--run`           | `-r`   | build and run              |
 | `--setproject`    | `-s`   | set the current project    |
-| `--setpath`       | `none` | set the project path       |
+| `--setpath`       | `-S` | set the project path       |
 | `--help`          | `-h`   | show help information      |
