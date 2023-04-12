@@ -1,8 +1,8 @@
 #!/bin/bash
 cd
-rm -rf ./projectmanager
-git clone git@gitee.com:sential/projectmanager.git
-cd projectmanager
+rm -rf ./ProjectManager
+git clone https://github.com/Dionysen/ProjectManager.git
+cd ProjectManager
 rm -rf build/*
 cd build
 cmake ..
